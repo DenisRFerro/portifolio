@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0f26d4ce7e.js" crossorigin="anonymous"></script>
+    <title>Denis R. Ferro</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Acme&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Passion+One:wght@700&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="imagens/logo-ferro.png" alt="">
+        </div>
+        <ul>
+            <li><a target="_blank" href="https://github.com/DenisRFerro">GitHub</a></li>
+            <li><a target="_blank" href="mailto:denis.rferro@hotmail.com">Email</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/denis-r-ferro-73528b228/">LinkedIn</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Denis R. Ferro</h1>
+                <h5>Desenvolvedor</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div id="about">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis minus illo, est voluptas asperiores, odio id veritatis sed consequatur fuga repudiandae eveniet tenetur sequi ad repellat quod iste impedit maxime laborum! Velit quae, optio qui minus, deserunt veniam eaque quaerat ducimus beatae iusto eligendi architecto dolorum odit?
+                </p>
+            </div>
+
+            <div class="form">
+                <p>Deixe seu contato!</p><br>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor e-mail!">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script defer>
+        function displayAbout() {
+            var arrow = document.getElementById('animation')
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about')
+            display.classList.toggle('active')
+        }
+    </script>
+
+
+</body>
+
+</html>
